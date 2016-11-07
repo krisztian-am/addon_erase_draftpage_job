@@ -27,12 +27,9 @@ class EraseDraftpage extends QueueableJob
 
     public function start(ZendQueue $q)
     {
-        // $list = new FileList();
-        // $files = $list->executeGetResults();
-		//
-        // foreach ($files as $f) {
-        //     $q->send($f['fID']);
-        // }
+        $list = new \Concrete\Core\Page\PageList();
+        $list->includeInactivePages();
+        $pages = $list->getResults();
     }
 
     public function processQueueItem(ZendQueueMessage $msg)
