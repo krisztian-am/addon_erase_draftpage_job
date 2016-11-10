@@ -6,8 +6,7 @@ use QueueableJob;
 use ZendQueue\Queue as ZendQueue;
 use ZendQueue\Message as ZendQueueMessage;
 use Exception;
-use File;
-use FileList;
+use Concrete\Core\Page\Page;
 
 class EraseDraftpage extends QueueableJob
 {
@@ -27,7 +26,7 @@ class EraseDraftpage extends QueueableJob
 
     public function start(ZendQueue $q)
     {
-        $pageDrafts = Concrete\Core\Page\Page::getDrafts();
+        $pageDrafts = Page::getDrafts();
         foreach ($pageDrafts as $pageDraft) {
             $q->send($pageDraft->getCollectionID());
         }
@@ -37,8 +36,8 @@ class EraseDraftpage extends QueueableJob
     {
         try {
             $pageDraft = Page::getByID($msg->body);
-            if (is_object($pageDraft)) {
-                $pageDraft->moveToTrash();
+            if ($pageDraft->isPageDraft()) {
+                $pageDraft->delete();
             } else {
                 throw new Exception(t('Error occurred while getting the Page object of pID: %s', $msg->body));
             }
