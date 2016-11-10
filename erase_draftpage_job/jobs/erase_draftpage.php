@@ -16,12 +16,12 @@ class EraseDraftpage extends QueueableJob
 
     public function getJobName()
     {
-        return t('Erase Draftpage');
+        return t('Erase Draft Pages');
     }
 
     public function getJobDescription()
     {
-        return t('Erase Draftpage.');
+        return t('The job will erase all draft pages. It would be useful for those who ended up having too many draft pages.');
     }
 
     public function start(ZendQueue $q)
@@ -48,6 +48,6 @@ class EraseDraftpage extends QueueableJob
 
     public function finish(ZendQueue $q)
     {
-        return t('Erase Draftpage.');
+        return t('Finished erasing draft pages.');
     }
 }
