@@ -27,32 +27,28 @@ class EraseDraftpage extends QueueableJob
 
     public function start(ZendQueue $q)
     {
-        $list = new \Concrete\Core\Page\PageList();
-        $list->includeInactivePages();
-        $pages = $list->getResults();
+        $pageDrafts = Concrete\Core\Page\Page::getDrafts();
+        foreach ($pageDrafts as $pageDraft) {
+            $q->send($pageDraft->getCollectionID());
+        }
     }
 
     public function processQueueItem(ZendQueueMessage $msg)
     {
-        // try {
-        //     $f = File::getbyID($msg->body);
-        //     if (is_object($f)) {
-        //         $fv = $f->getApprovedVersion();
-        //         if (is_object($fv)) {
-        //             $fv->refreshAttributes();
-        //         } else {
-        //             throw new Exception(t('Error occurred while getting the file version object of fID: %s', $msg->body));
-        //         }
-        //     } else {
-        //         throw new Exception(t('Error occurred while getting the file object of fID: %s', $msg->body));
-        //     }
-        // } catch (Exception $e) {
-        //     return false;
-        // }
+        try {
+            $pageDraft = Page::getByID($msg->body);
+            if (is_object($pageDraft)) {
+                $pageDraft->moveToTrash();
+            } else {
+                throw new Exception(t('Error occurred while getting the Page object of pID: %s', $msg->body));
+            }
+        } catch (Exception $e) {
+            return false;
+        }
     }
 
     public function finish(ZendQueue $q)
     {
-        return t('Draftpage Delete.');
+        return t('Erase Draftpage.');
     }
 }
