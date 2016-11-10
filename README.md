@@ -1,4 +1,4 @@
-# Erase Draft Page Job
+# Erase Draft Page Job - delete all draft pages of your concrete5 site
 
 When you are building a concrete5 site, sometime, you ended up leaving tons of draft pages.
 
@@ -31,7 +31,7 @@ When you install this add-on, it will add a very simple but **dangerious** job t
 
 This project is on GitHub. This package is released under MIT License.
 
-https://github.com/katzueno/rescan_files_job/
+https://github.com/katzueno/addon_erase_draftpage_job
 
 
 ## Copyright
@@ -40,7 +40,7 @@ https://github.com/katzueno/rescan_files_job/
 - Katz Ueno (@katzueno)
 
 
-# 下書きページ削除ジョブ
+# 下書きページ削除ジョブ - concrete5 サイトのすべての下書きページを一斉削除
 
 concrete5 サイト制作時に、下書きページを大量に作成してしまって削除するのが面倒くさくなっていませんか。
 
@@ -71,7 +71,7 @@ concrete5 サイト制作時に、下書きページを大量に作成してし�
 
 このパッケージは GitHub でも公開しています。ライセンスは MIT です。
 
-https://github.com/katzueno/rescan_files_job/
+https://github.com/katzueno/addon_erase_draftpage_job
 
 ## クレジット
 
