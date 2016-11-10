@@ -21,7 +21,7 @@ class EraseDraftpage extends QueueableJob
 
     public function getJobDescription()
     {
-        return t('The job will erase all draft pages. It would be useful for those who ended up having too many draft pages.');
+        return t('This job will erase all draft pages. It would be useful for those who ended up having too many draft pages.');
     }
 
     public function start(ZendQueue $q)
