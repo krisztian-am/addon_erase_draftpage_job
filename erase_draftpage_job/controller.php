@@ -13,12 +13,12 @@ class Controller extends Package
 
     public function getPackageDescription()
     {
-        return t('Add Erase Draftpage Job');
+        return t('This is a simple job package to erase all draft pages. It would be useful for those who ended up having too many draft pages.');
     }
 
     public function getPackageName()
     {
-        return t('Erase Draftpage');
+        return t('Erase Draft Page Job');
     }
 
     public function install()
