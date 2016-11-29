@@ -12,8 +12,6 @@ class EraseDraftpage extends QueueableJob
 {
     public $jSupportsQueue = true;
 
-    protected $files;
-
     public function getJobName()
     {
         return t('Erase Draft Pages');

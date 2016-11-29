@@ -11,7 +11,7 @@ When you install this add-on, it will add a very simple but **dangerious** job t
 1. Download zip files from GitHub, or the check it out from Marketplace. (in the future).
     1. Download zip file from the marketplace or GitHub
         1. Download & unzip the zip file
-        2. Make sure that folder name is *drase_draftpage_job*
+        2. Make sure that folder name is *erase_draftpage_job*
         3. Upload the folder under the packages folder of concrete5.
         4. Log on to concrete5 site as admin who can install packages.
     2. From Marketplace
@@ -51,7 +51,7 @@ concrete5 サイト制作時に、下書きページを大量に作成してし�
 1. GitHub やマーケットプレイから ZIP ファイルをダウンロードするか、マーケットプレイスからインストール
     1. GitHub か concrete5 マーケットプレイスからZIPファイルをダウンロードする方法
         1. ZIP ファイルを GitHub か、concrete5 Marketplace からダウンロードし解凍する。
-        2. フォルダ名が「**drase_draftpage_job**」にきちんとなっているか確認。
+        2. フォルダ名が「**erase_draftpage_job**」にきちんとなっているか確認。
         3. そのフォルダごと、concrete5 の packages フォルダの中にアップロード。
         4. パッケージをインストールできる権限を持ったユーザーで concrete5 にログイン。
     2. マーケットプレイスから
