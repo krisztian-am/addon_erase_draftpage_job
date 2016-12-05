@@ -34,10 +34,11 @@ This project is on GitHub. This package is released under MIT License.
 https://github.com/katzueno/addon_erase_draftpage_job
 
 
-## Copyright
+## Credit
 
-- Takayuki Kaneko (@kanetei)
-- Katz Ueno (@katzueno)
+- Takayuki Kaneko (Program, @kanetei)
+- Katz Ueno (Program, @katzueno, concrete5, Japan, Inc.)
+- Atsushi Sugiyama (Icon Design, @Pictron, Pictron Web Planning)
 
 
 # 下書きページ削除ジョブ - concrete5 サイトのすべての下書きページを一斉削除
@@ -75,7 +76,6 @@ https://github.com/katzueno/addon_erase_draftpage_job
 
 ## クレジット
 
-- Takayuki Kaneko (@kanetei)
-
-- Katz Ueno @katzueno (concrete5, japan, Inc.)
-
+- Takayuki Kaneko (Program, @kanetei)
+- Katz Ueno (Program, @katzueno, concrete5, Japan, Inc.)
+- Atsushi Sugiyama (Icon Design, @Pictron, Pictron Web Planning)
