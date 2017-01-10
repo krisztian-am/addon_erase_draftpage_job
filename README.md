@@ -33,6 +33,11 @@ This project is on GitHub. This package is released under MIT License.
 
 https://github.com/katzueno/addon_erase_draftpage_job
 
+## Version History
+
+Version | Updates
+--------|--------
+0.8.9   | Initial Version
 
 ## Credit
 
@@ -73,6 +78,13 @@ concrete5 サイト制作時に、下書きページを大量に作成してし�
 このパッケージは GitHub でも公開しています。ライセンスは MIT です。
 
 https://github.com/katzueno/addon_erase_draftpage_job
+
+## バージョン履歴
+
+番号    | 内容
+--------|--------
+0.8.9   | 最初のリリース
+
 
 ## クレジット
 
