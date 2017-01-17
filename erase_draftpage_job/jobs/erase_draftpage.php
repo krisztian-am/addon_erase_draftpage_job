@@ -32,15 +32,11 @@ class EraseDraftpage extends QueueableJob
 
     public function processQueueItem(ZendQueueMessage $msg)
     {
-        try {
-            $pageDraft = Page::getByID($msg->body);
-            if ($pageDraft->isPageDraft()) {
-                $pageDraft->delete();
-            } else {
-                throw new Exception(t('Error occurred while getting the Page object of pID: %s', $msg->body));
-            }
-        } catch (Exception $e) {
-            return false;
+        $pageDraft = Page::getByID($msg->body);
+        if ($pageDraft->isPageDraft()) {
+            $pageDraft->delete();
+        } else {
+            throw new Exception(t('Error occurred while getting the Page object of pID: %s', $msg->body));
         }
     }
 

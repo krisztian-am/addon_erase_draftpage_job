@@ -37,7 +37,7 @@ https://github.com/katzueno/addon_erase_draftpage_job
 
 Version | Updates
 --------|--------
-0.8.9   | Initial Version
+0.9.1   | Initial Version
 
 ## Credit
 
@@ -83,7 +83,7 @@ https://github.com/katzueno/addon_erase_draftpage_job
 
 番号    | 内容
 --------|--------
-0.8.9   | 最初のリリース
+0.9.1   | 最初のリリース
 
 
 ## クレジット
