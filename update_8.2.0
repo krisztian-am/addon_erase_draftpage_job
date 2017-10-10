@@ -1,0 +1,11 @@
+// Update for the current, 8.2.0 release of Concrete5
+
+    public function start(ZendQueue $q)
+    {
+        $service = \Core::make('site');
+        $defaultSite = $service->getDefault();
+        $pageDrafts = Page::getDrafts($defaultSite);
+        foreach ($pageDrafts as $pageDraft) {
+            $q->send($pageDraft->getCollectionID());
+        }
+    }
